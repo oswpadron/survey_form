@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Survey Form</title>
+    <link rel='stylesheet' href='styles.css'/>
+</head>
+
+<body>
+    <h1 id='title'>TheGame</h1>
+    <strong><p id='description'>Help us build a better game completing this survey!</p></strong>
+    <form id='survey-form'>
+        <fieldset>
+            <label for='name' id='name-label'>Name
+                <br>
+                <input type="text" class="input-size" id='name' placeholder='Enter your name' required></label>
+            <br>
+            <label for='email' id='email-label'>Email
+                <br>
+                <input id='email' class="input-size" name='email' type='email' placeholder='Enter your email' required></label>
+            <br>
+            <label for='age' id='number-label' >Age
+                <br>
+                <input id='number' class="input-size" type='number' placeholder='Age' required min='10' max='120'></label>
+            <br>
+            <strong><p for='games'>Which of these games do you think is the best one yet and why?</p></strong>
+            <br>
+            <div>
+                <br>
+                <select id='dropdown' name='game' class="input-size">
+                    <br>
+                    <option value="">Select one</option>
+                    <option value='1'>TheGame 1</option>
+                    <option value='2'>TheGame 2</option>
+                    <option value='3'>TheGame 3</option>
+                </select>
+                <br>
+            </div class="radios">
+            <div>
+                <br>
+                <label for='better-graphics'><input id='better-graphics' type='radio' name='reason'
+                        value='better-graphics' class='inline'>Better graphics</label>
+                <br>
+                <label for='story'><input id='story' type='radio' name='reason' value='story'
+                        class='inline'>Story</label>
+                <br>
+                <label for='other'><input id='other' type='radio' name='reason' value='other'
+                        class='inline'>Other</label>
+            </div>
+            <br>
+            <strong><p>What would you like to see improved?</p></strong>
+            <br>
+            <div>
+                <div>
+                    <input type="checkbox" id="graphics" name="feature" value="graphics">
+                    <label for="graphics">Graphics</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="open-world" name="feature" value="open-world">
+                    <label for="open-world">Open world</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bosses" name="feature" value="bosses">
+                    <label for="bosses">Bosses</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="more-costumes" name="feature" value="more-costumes">
+                    <label for="more-costumes">More costumes</label>
+                </div>
+            </div>
+            <strong><label for='suggestions'>Do you have any suggestions?</label></strong>
+            <br>
+            <br>
+            <textarea id='suggestions' name='suggestions' rows='3' columns='30'
+                placeholder='I would like...'></textarea>
+            <br>
+            <input type='submit' id='submit' value='Submit'>
+        </fieldset>
+    </form>
+</body>
+
+</html>
